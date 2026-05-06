@@ -12,19 +12,17 @@ fa_y = []
 while x < 3:
     fa_x.append(x)
     fa_y.append(f(x))
-    # print(f"f_ax and f_ay at index {i} is {fa_x[i]}, {fa_y[i]}")
-    # i += 1
     x += dx
 
 h = 0.2
 xp = []
-# i = 0
-# while i < (3 + h):
-#     xp += [i]
-#     i += h
-n = 30
-for i in range(n):
-    xp.append(i)
+i = 0
+while i < (3 + h):
+    xp += [i]
+    i += h
+# n = 30
+# for i in range(n):
+#     xp.append(i)
     
 m = 2 / 3
 fp = []
