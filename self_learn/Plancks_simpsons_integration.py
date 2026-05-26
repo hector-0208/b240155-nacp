@@ -24,7 +24,7 @@ for T in temperatures:
     E_lambda_um = E_lambda_m / 1e6 # Convert from W/m³ to W/(m²·µm)
     plt.plot(wavelengths_um, E_lambda_um, label=f'T = {T} K', linewidth=2)
 
-plt.title(r"Planck's Distribution Law", fontsize=16)
+plt.title("Planck's Distribution Law", fontsize=16)
 plt.xlabel(r"Wavelength, $\lambda$ ($\mu$m)", fontsize=12)
 plt.ylabel(r"Monochromatic Emissive Power, $E_\lambda$ (W/m² · $\mu$m)", fontsize=12)
 
@@ -49,10 +49,10 @@ K = simpson(y=E_lam_int, x=lam_m_int)
 sigma_calc = K / (T_int**4)
 
 print("Integration Range: 0.1 µm to 1000 µm")
+print(f"Theoretical Stefan-Boltzmann Constant:           {sigma_actual:.4e} W/(m²·K^4)")
 print(f"Temperature (T): {T_int} K\n")
 print(f"Calculated Total Emissive Power (K): {K:.2f} W/m²")
 print(f"Calculated Stefan-Boltzmann Constant (sigma): {sigma_calc:.4e} W/(m²·K^4)")
-print(f"Theoretical Stefan-Boltzmann Constant:           {sigma_actual:.4e} W/(m²·K^4)")
 
 error = abs(sigma_calc - sigma_actual) / sigma_actual * 100
 print(f"Percentage Error: {error:.4f}%")

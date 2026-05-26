@@ -20,10 +20,7 @@ i = 0
 while i < (3 + h):
     xp += [i]
     i += h
-# n = 30
-# for i in range(n):
-#     xp.append(i)
-    
+  
 m = 2 / 3
 fp = []
 fp2 = []

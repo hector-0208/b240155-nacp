@@ -30,7 +30,7 @@ while numerical_error > epsilon:
             numerical_error = numerical_error + abs(T[i,j] - T_new[i,j])
     iterations = iterations + 1
     T = T_new.copy()
-    print(T)
+    # print(T)
     if iterations % 1000 == 0:
         plt.figure(1)
         plt.semilogy(iterations, numerical_error, 'ko')
