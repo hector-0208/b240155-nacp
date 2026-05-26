@@ -10,6 +10,7 @@ your “point.” To win, you must continue rolling the dice until you
 rolling a 7 before making your point.
 """
 import random
+
 def roll():
     die1 = random.randrange(1, 7)
     die2 = random.randrange(1, 7)
