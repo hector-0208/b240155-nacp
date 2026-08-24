@@ -41,8 +41,7 @@ for iteration in range(max_iteration):
             P[i, j] = P_new
 
             error = abs(P_new - P_old)
-            if error > max_error:
-                max_error = error
+            max_error = max(max_error, error)
     if max_error < tolerance:
         print(f"Solution converged after {iteration} iterations.")
         break
