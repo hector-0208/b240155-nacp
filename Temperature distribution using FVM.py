@@ -1,5 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
 N = 51
 L = 1
 h = (L/(N-1))

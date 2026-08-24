@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def f(xx):
     C = (11 - 81/12) / 3
     return(xx**4/12 - xx**2 + C*xx)

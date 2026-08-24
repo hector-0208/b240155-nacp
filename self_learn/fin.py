@@ -1,5 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 L = 0.25          # Length of the fin in meters (25 cm)
 N = 10            # Number of spatial divisions

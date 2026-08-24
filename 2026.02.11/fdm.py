@@ -17,4 +17,3 @@ print("x\tf(x)")
 for i in range(n):
     print(f"{x[i]:.2f}\t{f[i]:.6f}")
 print(f"f(1) = {1**4 / 12 - 1**2 + 17 / 12 * 1}")
-      

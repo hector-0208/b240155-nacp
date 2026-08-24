@@ -1,5 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 C1 = 0.371e-15  # W*m^2 
 C2 = 1.439e-2   # m*K
@@ -25,8 +25,8 @@ for T in temperatures:
     plt.plot(wavelengths_um, E_lambda_um, label=f'T = {T} K', linewidth=2)
 
 plt.title("Planck's Distribution Law", fontsize=16)
-plt.xlabel("Wavelength, $\lambda$ ($\mu$m)", fontsize=12)
-plt.ylabel("Monochromatic Emissive Power, $E_\lambda$ (W/m$^2 \cdot \mu$m)", fontsize=12)
+plt.xlabel(r"Wavelength, $\lambda$ ($\mu$m)", fontsize=12)
+plt.ylabel(r"Monochromatic Emissive Power, $E_\lambda$ (W/m$^2 \cdot \mu$m)", fontsize=12)
 
 plt.xlim(0, 20) 
 plt.ylim(0, max(plancks_law(wavelengths_m, 2000)/1e6) * 1.1)
